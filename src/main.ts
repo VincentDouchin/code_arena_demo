@@ -17,7 +17,7 @@ canvasTexture.minFilter = NearestFilter
 const composer = new EffectComposer(renderer)
 composer.addPass(new TexturePass(canvasTexture))
 const CRTPass = new ShaderPass(CRTShaderMaterial)
-composer.addPass(new UnrealBloomPass(new Vector2(width, height), 0.2, 0, 0.0))
+composer.addPass(new UnrealBloomPass(new Vector2(width, height), 0.3, 0, 0.0))
 const glitch = new GlitchPass()
 composer.addPass(glitch)
 composer.addPass(new ShaderPass(CopyShader))
